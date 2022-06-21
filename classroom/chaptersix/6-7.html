@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>无标题文档</title>
+</head>
+
+<body bgcolor="#fef4d2" onload=Timetrack>
+<br>
+<center>
+    <font color="ffaafa"><h2>浏览某页所用的时间</h2></font>
+    <hr width=300>
+    <br>
+    <script type="text/javascript">
+        var entered = new Date();
+        function Timetrack(){
+            var now = new Date();
+            var seconds = Math.floor(now.getTime() - entered.getTime() / 1000);
+            var minutes = Math.floor(seconds / 60);
+            var second = seconds % 60;
+            var minute = minutes % 60;
+            document.time.timer.value = minutes + ":" + seconds;
+            var timeID = setTimeout("Timetrack()",1000);
+        }
+    </script>
+    <table>
+        <tr>
+            <td WIDTH = "100%">
+                <font FACE = "ARIEL,HELVETICA"SIZE="-1" >
+                    <form name="time">
+                        <p>浏览本页总共用去<input type="text" name="timer"  size="6" value="0:00">秒.</p>
+
+</form>
+</font>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>
+

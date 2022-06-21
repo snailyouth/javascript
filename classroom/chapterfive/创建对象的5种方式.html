@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    // 方式一：Object构造函数模式
+
+    var p = new Object();
+    p.name = "tom";
+    p.age = 18;
+    p.setname = function (name) {
+        this.name = name;
+    }
+    // 方式二：对象字面量模式
+    var p = {
+        name: "tom",
+        age: 18,
+        setname: function (name) {
+            this.name = name
+        }
+    }
+    // 方式三：工厂模式
+
+    function creatPerson(name, age) {
+        var obj = {
+            name: name,
+            age: age,
+            setName: function (name) {
+                this.name = name;
+            }
+        }
+        return obj;
+    }
+    // 方式四：自定义构造函数模式
+
+    function Person(name, age) {
+        this.name=name;
+        this.age=age;
+        this.setname=function(name){
+            this.name=name;
+        }
+
+        // 方式五：构造函数+原型模式
+        function Person(name, age) {
+            this.name=name;
+            this.age=age;
+        }
+        Person.prototype.setname=function(name){
+            this.name=name;
+        }
+
+</script>
+</body>
+</html>

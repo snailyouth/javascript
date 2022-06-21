@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    请输入要产生的验证码的位数:<input type="text" name="num" id="num"/><br/><br/>
+    <input type="button" value="生成" onclick="make()"/>&nbsp;&nbsp;
+    <input type="button" value="刷新" onclick="refresh()"/><br/><br/>
+    <div name="result">
+    </div>
+</form>
+<script>
+    var num=document.getElementsByName("num")[0];
+    var result=document.getElementsByName("result")[0];
+    function rad(num) {
+        var result="";
+        for (let i = 0; i <parseInt(num); i++) {
+            result=result+(parseInt(Math.random()*10)).toString();
+        }
+        return result;
+    }
+
+    function make() {
+        if (check(num.value)){
+            result.innerHTML="产生的验证码使:"+rad(num.value);
+        }else{
+            result.innerHTML="重新输入合法的数字";
+        }
+
+    }
+
+    function refresh() {
+        num.value="";
+
+    }
+
+    function check(num) {
+        if (isNaN(num) ){
+            alert("你输入的使非数字，请输入数字");
+            return false;
+        }
+        if (num<0){
+            alert("你输入的数字要求使小于等于0，请重新输入");
+            return false;
+        }
+        return true;
+
+    }
+</script>
+</body>
+</html>

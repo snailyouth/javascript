@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="picture/1.jpg" alt="数字" id="myPicture" height="570px" width="1250px">
+<script>
+    //var index = 0;
+
+    function choosePic() {
+        var myPic = ["picture/1.jpg",
+            "picture/2.jpg",
+            "picture/3.jpg",
+            "picture/4.jpg",
+            "picture/5.jpg"];
+        if (true){
+            var index = Math.floor(Math.random()*5);
+        }
+        document.getElementById("myPicture").src = myPic[index];
+    }
+    setInterval(choosePic,500);
+</script>
+</body>
+</html>

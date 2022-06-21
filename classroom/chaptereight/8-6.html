@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function disable() {
+            document.getElementById("fname").disabled=true;
+        }
+        function enable() {
+            document.getElementById("fname").disabled=false;
+        }
+    </script>
+</head>
+<body>
+<form id="myForm">
+    姓名:<input id="fname" type="text" value="张三"/>
+    <input type="button" value="禁用" onclick="disable()"/>
+    <input type="button" value="启用" onclick="enable()"/>
+</form>
+</body>
+</html>

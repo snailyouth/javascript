@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8516b3b0-ca39-46e4-a172-52f4e0e6eaf4" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="jsproject" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Program Files (x86)\apache-maven-3.8.2\maven-repo" />
+        <option name="mavenHome" value="D:/Program Files (x86)/apache-maven-3.8.2" />
+        <option name="userSettingsFile" value="D:\Program Files (x86)\apache-maven-3.8.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25lx3wDmnWEHkljBgFmTgT1zvlE" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/classroom/chaptersix/蔡有财 轮播图/轮播图/picture/随机轮播图.html" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/classroom/chaptersix/蔡有财 轮播图/轮播图/picture/随机轮播图.html" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\javaScript\jsproject\classroom\chaptersix\蔡有财 轮播图\轮播图\picture" />
+      <recent name="E:\javaScript\jsproject\classroom\chaptersix\蔡有财 轮播图\轮播图" />
+      <recent name="E:\javaScript\jsproject\classroom\chaptersix" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.表单轮播图.html">
+    <configuration name="随机轮播图.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/蔡有财 轮播图/随机轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="表单轮播图.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/轮播图/表单轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="获取鼠标坐标.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chapterseven/获取鼠标坐标.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="表单轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/轮播图/表单轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="注册表单.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptereight/注册表单.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="注册表单.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptereight/注册表单.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="表单轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/轮播图/picture/表单轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="点击按钮更换文本.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptereight/点击按钮更换文本.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="选项卡.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/jquery/选项卡.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="注册表单.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptereight/注册表单.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="表单轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/轮播图/表单轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="例子.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptertwo/例子.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="简易轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chapterfive/简易轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="随机轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/随机轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="注册表单.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptereight/注册表单.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="表单轮播图.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptersix/蔡有财 轮播图/表单轮播图.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="注册表单.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/chaptereight/注册表单.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="k1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/kaoshi/k1.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="k2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/jsproject/classroom/kaoshi/k2.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.表单轮播图.html" />
+        <item itemvalue="JavaScript Debug.k2.html" />
+        <item itemvalue="JavaScript Debug.k1.html" />
+        <item itemvalue="JavaScript Debug.获取鼠标坐标.html" />
+        <item itemvalue="JavaScript Debug.随机轮播图.html (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,HIDE_INHERITED_FROM_OBJECT" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8516b3b0-ca39-46e4-a172-52f4e0e6eaf4" name="Default Changelist" comment="" />
+      <created>1646115279006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646115279006</updated>
+      <workItem from="1646115281729" duration="8869000" />
+      <workItem from="1646136880412" duration="1185000" />
+      <workItem from="1646286442618" duration="10533000" />
+      <workItem from="1646718657040" duration="1776000" />
+      <workItem from="1646720784958" duration="6460000" />
+      <workItem from="1646891403015" duration="5750000" />
+      <workItem from="1647323718312" duration="9042000" />
+      <workItem from="1647345174483" duration="3000" />
+      <workItem from="1647345193174" duration="9000" />
+      <workItem from="1647495859427" duration="1670000" />
+      <workItem from="1647497561736" duration="4573000" />
+      <workItem from="1647583920371" duration="51000" />
+      <workItem from="1647928375005" duration="10620000" />
+      <workItem from="1648101082282" duration="4494000" />
+      <workItem from="1648439656912" duration="10000" />
+      <workItem from="1648532958927" duration="11019000" />
+      <workItem from="1648705886321" duration="4083000" />
+      <workItem from="1648712023566" duration="978000" />
+      <workItem from="1649237811582" duration="1262000" />
+      <workItem from="1649310971913" duration="6610000" />
+      <workItem from="1649399087120" duration="143000" />
+      <workItem from="1649742248569" duration="11268000" />
+      <workItem from="1649915409482" duration="6250000" />
+      <workItem from="1650158703513" duration="1513000" />
+      <workItem from="1650282022226" duration="2978000" />
+      <workItem from="1650348584719" duration="7987000" />
+      <workItem from="1650521069729" duration="4466000" />
+      <workItem from="1650609342724" duration="49000" />
+      <workItem from="1650779673535" duration="6390000" />
+      <workItem from="1650947002910" duration="2100000" />
+      <workItem from="1650954131934" duration="5577000" />
+      <workItem from="1651125125132" duration="1360000" />
+      <workItem from="1651127320750" duration="534000" />
+      <workItem from="1651371633342" duration="7000" />
+      <workItem from="1651558908935" duration="7815000" />
+      <workItem from="1651673772730" duration="1598000" />
+      <workItem from="1651730880033" duration="7948000" />
+      <workItem from="1652163735277" duration="8320000" />
+      <workItem from="1652229459322" duration="769000" />
+      <workItem from="1652335503712" duration="7151000" />
+      <workItem from="1652422733133" duration="5953000" />
+      <workItem from="1652767552052" duration="5901000" />
+      <workItem from="1652773591341" duration="8180000" />
+      <workItem from="1652940735755" duration="7451000" />
+      <workItem from="1653373354996" duration="7723000" />
+      <workItem from="1653970635836" duration="2357000" />
+      <workItem from="1653974172013" duration="8132000" />
+      <workItem from="1653984589716" duration="2164000" />
+      <workItem from="1654150558536" duration="5938000" />
+      <workItem from="1654582199697" duration="11006000" />
+      <workItem from="1654594196049" duration="3744000" />
+      <workItem from="1654608979408" duration="474000" />
+      <workItem from="1654609476847" duration="1106000" />
+      <workItem from="1654755397770" duration="3372000" />
+      <workItem from="1654759170269" duration="354000" />
+      <workItem from="1654759602116" duration="2844000" />
+      <workItem from="1654763200672" duration="1355000" />
+      <workItem from="1655187447672" duration="3390000" />
+      <workItem from="1655191809565" duration="2371000" />
+      <workItem from="1655194423740" duration="1657000" />
+      <workItem from="1655359515012" duration="1714000" />
+      <workItem from="1655791679852" duration="6442000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="471" y="219" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1655792615816">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="471" y="219" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1655792615816" />
+    <state x="526" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1651732497177">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="526" y="289" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1651732497177" />
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1655189908056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1655189908056" />
+    <state x="549" y="155" key="FileChooserDialogImpl" timestamp="1655189859958">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824/-1024.8.1024.728@0.0.1536.824" timestamp="1649399196336" />
+    <state x="549" y="155" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1655189859958" />
+    <state width="1492" height="252" key="GridCell.Tab.0.bottom" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.0.center" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.0.left" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.0.right" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.1.bottom" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.1.center" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.1.left" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.1.right" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.2.bottom" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.2.center" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.2.left" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state width="1492" height="252" key="GridCell.Tab.2.right" timestamp="1655807924715">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="252" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1655807924715" />
+    <state x="349" y="149" key="IDE.errors.dialog" timestamp="1650359232512">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="149" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1650359232512" />
+    <state x="334" y="126" key="Registry" timestamp="1648710073931">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="334" y="126" key="Registry/0.0.1536.824@0.0.1536.824" timestamp="1648710073931" />
+    <state x="379" y="117" width="1007" height="707" key="SettingsEditor" timestamp="1654763966318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="379" y="117" width="1007" height="707" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1654763966318" />
+    <state x="178" y="17" key="new project wizard" timestamp="1649399227788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="17" key="new project wizard/0.0.1536.824/-1024.8.1024.728@0.0.1536.824" timestamp="1649399227788" />
+    <state x="361" y="74" key="scopes" timestamp="1648542291085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="74" key="scopes/0.0.1536.824@0.0.1536.824" timestamp="1648542291085" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1648709919995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1648709919995" />
+  </component>
+</project>

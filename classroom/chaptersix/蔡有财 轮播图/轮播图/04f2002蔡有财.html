@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0}
+        img{
+            margin: 0 auto;
+            display:flex;
+            width: 650px;
+            height: 300px;
+        }
+        form{
+            margin:0px auto;
+            display: flex;
+            width: 500px;
+        }
+        /*右边的相反*/
+        #left{
+            margin-left: 150px;
+            background: rgb(0,171,238);
+            background: linear-gradient(
+            0deg,
+            rgba(0,172,238,1)0%,
+            rgba(2,126,251,1)100%
+            );
+            width: 40px;
+            height: 50px;
+            line-height: 42px;
+            padding: 0px;
+            /*边框*/
+            border: none;
+            color: white;
+            /*半径*/
+            border-radius: 5px;
+        }
+        #left:hover {
+            /*透明的效果*/
+            background: transparent;
+            box-shadow: none;
+            color: aquamarine;
+        }
+        #right{
+            margin-right: 150px;
+            background: rgb(0,171,238);
+            background: linear-gradient(
+                    0deg,
+                    rgba(0,172,238,1)0%,
+                    rgba(2,126,251,1)100%
+            );
+            width: 40px;
+            height: 50px;
+            line-height: 42px;
+            padding: 0px;
+            /*边框*/
+            border: none;
+            color: white;
+            /*半径*/
+            border-radius: 5px;
+        }
+        #right:hover {
+            /*透明的效果*/
+            background: transparent;
+            box-shadow: none;
+            color: aquamarine;
+        }
+
+
+        /*后面加的*/
+        .d{
+            margin: 0 auto;
+            display:flex;
+            width: 450px;
+            height: 50px;
+        }
+        /*第一个方块*/
+        .d1{
+            display: block;
+            margin-top: 50px;
+            width: 100px;
+            height: 50px;
+            Border-width:10px;
+            Border-color: #333333;
+            background-color: #FF0000;
+        }
+        .d2{
+            display: block;
+            margin-top: 50px;
+            margin-left: 50px;
+            width: 100px;
+            height: 50px;
+            Border-width:10px;
+            Border-color: #333333;
+            background-color: #FF0000;
+        }
+        /*自动播放*/
+        .zidong{
+
+        }
+        .zidong1{
+            display: block;
+            width: 100px;
+            height: 50px;
+            Border-width:10px;
+            Border-color: #333333;
+            background-color: #16e6e0;
+            text-align: center;
+        }
+        .rd1{
+            width: 100px;
+            height: 50px;
+        }
+
+    </style>
+
+</head>
+<body>
+<!--设置图片的位置和大小-->
+<img src="img1.jpg" alt="数字" id="myPicture"/>
+<div class="d" id="kuang">
+    <form>
+        <input type="radio" id="r1" class="rd1" name="radio1"/>
+        <input type="radio" id="r2" class="rd1" name="radio1"/>
+        <input type="radio" id="r3" class="rd1" name="radio1"/>
+    </form>
+</div>
+
+<div class="zidong">
+    <div class="zidong1" id="zidong1" >点击播放</div>
+</div>
+<form  id="form" name="form">
+    <input type="button" id="left" class="left" value="<"/>
+    <input type="button" id="right" class="right" value=">"/>
+</form>
+
+
+<script>
+    //1.轮播图
+    var index=0;
+    var myPic;
+    var pic;
+    var radio1;
+    var turee=true;
+
+    function choosePic() {
+        //图片数组
+        myPic = ["img1.jpg","img2.jpg","img3.jpg"];
+        //数组位置
+        index++;
+        if (index>2){
+            index=0;
+        }
+        //显示要显示的图片
+        pic=document.getElementById("myPicture");
+        pic.src = myPic[index];
+        radio1[index].checked = true;
+    }
+
+ /*   //2.鼠标放在图片上的停止事件
+    //获取图片的id对象
+    pic=document.getElementById("zidong1");
+    //设置全局变量，启动函数
+    var timeId=setInterval(choosePic,2000);
+    //动态绑定，鼠标经过时的事件
+    pic.onclick=function shubiao1(){
+        if (turee==true){
+            turee=false;
+            //清除定时器
+            clearInterval(timeId);
+        }
+        if (turee==false){
+            turee=true;
+            timeId=setInterval(choosePic,2000)
+        }
+
+    }*/
+
+
+    //2.鼠标放在图片上的停止事件
+    //获取图片的id对象
+    pic=document.getElementById("zidong1");
+    //设置全局变量，启动函数
+    var timeId=setInterval(choosePic,2000);
+    //动态绑定，鼠标经过时的事件
+    pic.onclick=function shubiao1(){
+            if (turee == true) {
+                clearInterval(timeId);
+                turee = false;
+            }else{
+                timeId=setInterval(choosePic,2000)
+                turee=true;
+            }
+    }
+ /*   //动态绑定，鼠标移开时的动作
+    pic.onclick=function shubiao2(){
+        //设置定时器
+        timeId=setInterval(choosePic,2000)
+    }
+*/
+    //3、鼠标点击左右按钮事件
+    let left=document.getElementById("left");
+    let right=document .getElementById("right");
+
+    left.onmouseover=function () {
+        clearInterval(timeId);
+    };
+    left.onmouseout=function () {
+        timeId=setInterval(choosePic,3000);
+    };
+
+    right.onmouseover=function () {
+        clearInterval(timeId);
+    };
+    right.onmouseout=function () {
+        timeId=setInterval(choosePic,3000);
+    };
+
+    left.onclick=function () {
+        index--;
+        // document.writeln(index);
+        if (index<0){
+            index=myPic.length-1;
+        }
+        pic.src = myPic[index];
+        radio1[index].checked = true;
+
+    }
+
+    right.onclick=function () {
+        index++;
+        if (index > myPic.length - 1) {
+            index = 0;
+        }
+        pic.src = myPic[index];
+        radio1[index].checked = true;
+    }
+
+    //4\设置圆点的移动
+    radio1 = document.getElementsByName("radio1");
+    for (let i = 0; i < radio1.length; i++) {
+        radio1[i].onclick = function () {
+            index = i;
+            pic.src = myPic[index];
+            clearInterval(timeId);
+            timeId = setInterval(choosePic, 2000);
+        }
+    }
+
+/*
+    //5.点击播放
+    let zidong1 = document.getElementById("zidong1");
+
+*/
+
+
+
+</script>
+</body>
+</html>

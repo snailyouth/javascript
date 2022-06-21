@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var today;
+    today = new Date();
+    with(today){
+        document.write("今天是"+getFullYear()+"年"+(getMonth()+1)+"月"+getDate()+"日");
+    }
+</script>
+
+
+<script>
+    function Person(name,age){
+        this.name=name;
+        this.age=age;
+        this.show=function(){
+            alert(this.name+" "+this.age);
+        }
+    }
+    function Student(name,age ){
+        Person.call(this,name,age);
+        //通过call方法修改了person构造函数的指向了调用者本身
+    }
+    var student=new Student("王同学",9);
+    student.show();
+    let string = new String();
+    string.
+</script>
+</body>
+</html>

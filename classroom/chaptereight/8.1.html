@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>创建会员注册表单</title>
+</head>
+<body>
+<form id="formid" name="myForm" method="post" action="check.php">
+    用户名:<input type="text" name="username" value=""/><br/><br/>
+    密码  :<input type="password" name="password1" value=""/><br/><br/>
+    确认密码:<input type="password"  name="password2" value=""/><br/><br/>
+    性别:<input type="radio" name="radioSex" id="boy" checked/>男
+    <input type="radio" name="radioSex" id="girl" checked/>女<br/><br/>
+    爱好:<input type="checkbox" value="rock" name="m1" checked/>摇滚乐
+    <input type="checkbox" value="jazz" name="m2" checked/>爵士乐
+    <input type="checkbox" value="pop" name="m3" />流行乐<br/><br/>
+    工作地点:<select name="name" size="3" multiple>
+    <option value="beijing" selected>北京</option>
+    <option value="shanghai" >上海</option>
+    <option value="tianjin" >天津</option>
+</select><br/><br/>
+    <input type="submit" name="submit" value="注册"/><br/><br/>
+    <input type="reset" name="reset" /><br/><br/>
+</form>
+</body>
+</html>

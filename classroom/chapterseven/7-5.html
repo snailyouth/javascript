@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function mouseover(){
+        document.getElementById("image1").src="2.jpg";
+    }
+    function mouseout() {
+        document.getElementById("image1").src="1.jpg";
+
+    }
+</script>
+<body>
+<p>
+    <img id="image1" name="image1" src="1.jpg" onmouseover="mouseover()" onmouseout="mouseout()" width="100px" height="100px"/>
+</p>
+</body>
+</body>
+</html>

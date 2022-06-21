@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>点击判断是否同时按下shift键</title>
+    <script type="text/javascript">
+        function anno(){
+            //判断是否同时按下了shift键
+            if(event.shiftKey == true){
+                alert("同时按下了shift");
+            }　　　　
+            if(event.shiftKey == false){
+                alert("没有按下shift");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+<center>
+    <button name="anno" onclick="anno();"><font size="40dp">单击</font></button>
+</center>
+</body>
+</html>
+
+

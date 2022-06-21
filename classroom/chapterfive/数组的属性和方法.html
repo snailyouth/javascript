@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // var fruits=["Banana","Orange","Apple","Mango"];
+    var ages=[32,33,16,40];
+    function chechAdult(age) {
+        return age>=18;
+    }
+    document.writeln(ages.filter(chechAdult));
+</script>
+<script>
+    var site=["runoob","google","taobao"];
+    document.writeln(site.includes("runoob")) ;
+    document.writeln("<br>")
+    document.writeln(site.includes("baidu"));
+</script>
+
+<pre>
+    <script>
+        let students,i=0;
+        students=new Array("张三","李四","王五","赵六");
+        for(i in students){
+            document.writeln("第"+(i+1)+"个同学是："+students[i]);
+        }
+    </script>
+</pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function unique(arr){
+        for(var i=0; i<arr.length; i++){
+            for(var j=i+1; j<arr.length; j++){
+                if(arr[i]==arr[j]){
+                    arr.splice(j,1);
+                    j--;
+                }
+            }
+        }
+        return arr;
+    }
+
+    //请输入你想要去重的数量
+    var shuliang=prompt("请输入你想要去重的数量:");
+    var arr=new Array();
+    arr.length=shuliang;
+    for (let i = 0; i <arr.length; i++) {
+        let s=prompt("你输入的数是：");
+        arr[i]=s;
+    }
+
+    //将去重后的数组输入到arr1中
+    var arr1=unique(arr);
+    //遍历数组
+    for (let i = 0; i <arr.length ; i++) {
+        document.writeln(arr1[i]);
+    }
+</script>
+</body>
+</html>

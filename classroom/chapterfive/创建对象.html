@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<pre>
+<script>
+    //方式一
+    let object1= new Object();
+    object1.name="小蔡1";
+    object1.age=1;
+    object1.text1=function () {
+        document.writeln("名字是"+object1.name+"年龄"+object1.age);
+    }
+    object1.text1();
+
+
+    //方式二
+    let object2={
+        name:"小蔡2",
+        age:2,
+        text2:function () {
+            document.writeln("名字是"+object2.name+"年龄"+object2.age);
+        }
+    }
+    object2.text2();
+
+
+    //方式三
+    function object3(name,age) {
+        this.name=name;
+        this.age=age;
+        this.text3=function () {
+            document.writeln("名字是"+this.name+"年龄"+this.age);
+            // document.writeln("名字是"+object3().name+"年龄"+object3().age);
+
+        };
+    }
+    let object33 = new object3("小蔡3",3);
+    object33.text3();
+
+
+    //方式四
+    function object4() {
+
+    }
+    object4.prototype.name="小蔡4";
+    object4.prototype.age=4;
+    object4.prototype.text4=function () {
+        document.writeln("名字是"+this.name+"年龄"+this.age);
+    }
+    let object44 = new object4();
+    object44.text4();
+
+    //方式五
+    function object5(name,age){
+        this.name=name;
+        this.age=age;
+    }
+    object5.prototype.text5=function () {
+        document.writeln("名字是"+this.name+"年龄"+this.age);
+    }
+
+    let object55 = new object5("小蔡5",5);
+    object55.text5();
+
+
+</script>
+</pre>
+</body>
+</html>

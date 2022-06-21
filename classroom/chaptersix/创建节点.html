@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var new_eme=document.createElement("p");
+    var eme_text=document.createTextNode("Hello JavaScript");
+    var attr=document.createAttribute("align");
+    attr.value="center";
+    new_eme.appendChild(eme_text);
+    new_eme.setAttributeNode(attr);
+    document.body.appendChild(new_eme);
+</script>
+</body>
+</html>

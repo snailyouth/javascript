@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script>
+        let date = new Date();
+        document.write("今天是：");
+        if(date.getDay()==1){
+            document.write("星期一");
+        }else if(date.getDay()==2){
+            document.write("星期二");
+        }else if(date.getDay()==3){
+            document.write("星期三");
+        }else if(date.getDay()==4){
+            document.write("星期四");
+        }else if(date.getDay()==5){
+            document.write("星期五");
+        }else if(date.getDay()==6){
+            document.write("星期六");
+        }else{
+            document.write("星期日");
+        }
+    </script>-->
+
+
+    <!--通过switch语句判断今天是星期几-->
+<!--    <script>
+        let date1 = new Date();
+        document.write("今天是：");
+        switch(date1.getDay()){
+            case 1:document.write("星期一");break;
+            case 2:document.write("星期二");break;
+            case 3:document.write("星期三");break;
+            case 4:document.write("星期四");break;
+            case 5:document.write("星期五");break;
+            case 6:document.write("星期六");break;
+            default :document.write("星期日")
+        }
+    </script>-->
+
+<!--    <script>
+        var score,grade;
+        //强转换，解析一个字符串，并返回一个浮点数
+        score=parseFloat(prompt("请输入学生的成绩：","()"))
+        if(score>=90){
+            grade="合格";
+        }else{
+            if(score>=60){
+                grade="合格";
+            }else{
+                grade="不合格";
+            }
+        }
+        alert("根据学生成绩："+score+",评定为："+grade);
+    </script>
+    -->
+
+
+
+<!--    <script>
+        var sum=0;
+        for (let j = 1; j <=100 ; j++) {
+            sum+=j;
+        }
+        alert("1+2+3+4....+100="+sum);
+
+        var sum=1;
+        for (let j = 1; j <=10 ; j++) {
+            sum*=j;
+        }
+        alert(sum);
+    </script>-->
+
+<!--    <script>
+        var result=1;//计算累乘的结果
+        var sum=0;//计算累乘的和
+        var i=1;//循环的初始化
+        var count=10;//循环次数
+        while(i<=10){
+            result=result*i;
+            sum=sum+result;
+            i++;
+        }
+        document.write(sum)
+
+    </script>-->
+
+    <script>
+        alert("123abc"-"123");
+        var i=2;sum=0;
+        do{
+            sum+=i;
+            i=i+2;
+        }while (i<100);
+        alert("2+4+6+...+100="+sum);
+
+    </script>
+
+    <script>
+        var input,input_number,sum=0;
+        while(true){
+            input=prompt("sum="+sum+"\n请输入新的累加：","0");
+            if (input=="Q"||input=="q"){
+                break;
+            }
+            input_number=parseFloat(input);
+            if (isNaN(input_number)){
+                continue;
+            }
+            if (input_number<=0){
+                continue;
+            }
+            sum+=input_number;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

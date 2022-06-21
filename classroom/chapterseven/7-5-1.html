@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面加载与卸载事件</title>
+    <script>
+        function welcome(){
+            alert("你好！欢迎你，在这里绑定<body>的函数");
+        }
+        function start(){
+            var welcome_load=document.getElementById("btn");
+            welcome_load.onclick=welcome;//绑定函数
+        }
+    </script>
+</head>
+<body onload="start()">
+<p>
+    <button id="btn" name="btn" >欢迎光临</button>
+</p>
+</body>
+</html>

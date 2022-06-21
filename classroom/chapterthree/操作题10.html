@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    function test(){
+        for(var i=0;i<=10;i++){
+            for(var j=10-i;j>=0;j--){
+                for(var k=10-i-j;k>=0;k--){
+                    if((i*1+j*2+k*5==18)&&(i+j+k==10)){
+                        document.writeln("一元的："+i+"张，"+"二元的："+j+"张，"+"五元的"+k+"张<br />");
+
+                    }
+                }
+            }
+        }
+    }
+    test();
+</script>
+
+</body>
+</html>

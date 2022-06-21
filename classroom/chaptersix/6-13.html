@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function AddClone(deep) {
+            var selNode=document.getElementById("genderld");
+            var newSelect=selNode.cloneNode(deep);
+            var newNode=document.createElement("br");
+            var divNode=document.getElementById("div1");
+            divNode.appendChild(newSelect);
+            divNode.appendChild(newNode);
+        }
+    </script>
+</head>
+<body>
+<form name="form1" action="" method="post">
+    <hr>
+    <select name="genderSelect" id="genderId">
+    <option value="%">请选择性别</option>
+    <option value="0">男</option>
+    <option value="1">女</option>
+    </select>
+    <hr>
+    <div id="div1"></div>
+    <input type="button" value="普通复制" onclick="AddClone(false)"/>
+    <input type="button" value="深度复制" onclick="AddClone(true)"/>
+</form>
+</body>
+</html>

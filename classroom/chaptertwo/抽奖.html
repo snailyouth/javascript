@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<script type="text/javascript">
+var namelist=["1号球","2号球","3号球","4号球","5号球","6号球","7号球","8号球","9号球","10号球","11号球","12号球","13号球","14号球","15号球","16号球","17号球","18号球","19号球","20号球"];
+var mytime=null;
+function doit(){
+	var bt=window.document.getElementById("bt");
+	if(mytime==null){
+	bt.innerHTML="停止抽奖 ";
+	show();
+	}else{
+		bt.innerHTML="开始抽奖";
+		clearTimeout(mytime);
+		mytime=null;
+		}
+}
+
+function show(){
+	var box=window.document.getElementById("box");
+	var num=Math.floor((Math.random()*100000))%namelist.length;
+	box.innerHTML=namelist[num];
+	mytime=setTimeout("show()",1);
+	}
+
+</script>
+</head>
+
+<body id="bodybj">
+<div id="box" >准备好了，开始抽奖了</div>
+<div id="bt" onclick="doit()" >开始抽奖</div>
+<div style="text-align:center; margin:50pc 0;font:normal 14px/24px 'MicroSoft YaHei';"> </div>
+
+</body>
+</html>

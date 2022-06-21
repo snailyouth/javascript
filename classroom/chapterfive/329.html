@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script>
+        function Student(name,gender,mrjox){
+            this.name = name;
+            this.gender
+        }
+    </script>
+</head>
+<body>
+<!--<script>
+    let number = Math.round(Math.random()*100+1);
+
+    for (let i = 0; i <7 ; i++) {
+        let s = prompt("请输入你猜得数：");
+        if(s>number){
+            alert("你猜得数大了")
+        }else if(s<number){
+            alert("你猜得数小了")
+        }else{
+            alert("你猜对了，这个数是"+number);
+            break;
+        }
+    }
+    document.writeln(number);
+</script>-->
+
+<script>
+    var Animal={
+        name:"花花",
+        owner:"王小丽",
+        color:"黑色"
+    }
+/*    function Animal(name,color){
+        this.name=name;
+        this.color=color;
+    }*/
+    /*Animal("xiaocai","red");*/
+
+    document.write(Animal.owner+"家得小狗名字叫"+Animal.name+"颜色是"+Animal.color+"的");
+</script>
+
+<!--<script>
+    let obj=new Object();
+    obj.name="张三";
+    obj.age=28;
+    obj.fun=function(){
+        document.write("我是"+this.name+","+this.age);
+    }
+</script>-->
+
+
+<script>
+    function Animal(name,color){
+        this.name=name;
+        this.color=color;
+    }
+    var animal1=new Animal("花花","黑色");
+    var animal2=new Animal("狗狗","黄色");
+    document.writeln("猫星人的名字为"+animal1().name+"颜色为"+animal1.color);
+    document.writeln("汪星人的名字为"+animal2().name+"颜色为"+animal1.color);
+    document.writeln(animal1.constructor.toString());
+
+    new String(); aa
+</script>
+
+</body>
+</html>

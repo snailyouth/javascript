@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示当前窗口占用显示器的区域</title>
+</head>
+<body>
+<br>
+<center>
+    <h2>显示占用区域</h2>
+    <hr width="300">
+    <br>
+</center>
+<pre>
+    <center>
+<script>
+    function GetWinSize() {
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            var sSize = (document.body.clientWidth * document.body.clientHeight);
+            return sSize;
+        } else {
+            var sSize = (window.outerWidth * window.outerHeight);
+            return sSize;
+        }
+        return ;
+    }
+var percent=Math.round((GetWinSize()/(screen.width*screen.height)*100)*Math.pow(10,0));
+document.writeln("此窗口占用当前显示器大约"+"<font color=#CC0033>"+percent+"%</font>"+"的区域");
+
+</script>
+        </center>
+    </pre>
+</body>
+</html> 

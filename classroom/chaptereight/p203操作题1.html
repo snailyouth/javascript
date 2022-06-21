@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="shubiao()">
+<form id="form" name="form" method="post" action="mei.php">
+    <input type="text" id="text1" name="text1" style="width: 300px;"/>
+</form>
+<script>
+    function shubiao(){
+        let text1 = document.getElementById("text1");
+        window.onmousemove = function () {
+                let x = event.x;
+                let y = event.y;
+                let weizhi="x轴为"+x+"y轴为"+y;
+                return text1.value = weizhi;
+
+    }
+    }
+
+</script>
+</body>
+</html>

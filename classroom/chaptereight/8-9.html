@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>重置表单</title>
+    <script>
+        var myform =document.getElementById("myform");
+        function freset() {
+            myform.reset();
+        }
+    </script>
+</head>
+<body>
+<form id="myForm">
+    年龄:<input type="text" size="20"><br/><br/>
+    <input type="reset" value="重置" onclick="freset()"/>
+
+
+</form>
+</body>
+</html>

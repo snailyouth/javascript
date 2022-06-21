@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function openNewWin() {
+        let date = new Date();
+        var newWin=open("","myWindow","width=400,height=200,left=0,top=10,toolbar=np,menubar=no");
+        newWin.document.open();
+        newWin.document.writeln("<html><head><title>通知</title></head>");
+        newWin.document.writeln("<body>");
+        newWin.document.writeln("<h1>通知</h1>");
+        newWin.document.writeln("<p1>请同学们注意，下周举行计算机考试</p1>");
+        newWin.document.writeln("</body></html>")
+        newWin.document.writeln(date.toLocaleTimeString());
+        newWin.document.close();
+        newWin.focus();
+
+    }
+</script>
+<p><a href="javascript:openNewWin()">通知</a> </p>
+</body>
+</html>

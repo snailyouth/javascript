@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function wel_girl() {
+            alert("欢迎您，女士请到二楼接待室！")
+        }
+        function wel_boy() {
+            alert("欢迎您，男士请到一楼接待室！")
+
+        }
+    </script>
+</head>
+<body>
+<p>
+    <button name="button1" id="button1">我是男士</button>
+</p>
+<p>
+    <button name="button2" id="button2">我是女士</button>
+</p>
+<script>
+    var welcome_boy=document.getElementById("button1");
+    welcome_boy.onclick=wel_boy();
+    var welcome_boy=document.getElementById("button2");
+    welcome_boy.onclick=wel_girl();
+
+
+</script>
+</body>
+
+</html>

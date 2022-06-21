@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function delhr(){
+           var hrs=document.getElementsByTagName("hr");
+            for (let i = 0; i <hrs.length-1 ; i++) {
+                var hr=hrs[i];
+                hr.parentNode.removeChild(hr);
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>javascript程序设计</h1>
+<hr/>
+<h2>什么是javascript</h2>
+<p>javascript是一门基于对象和世界驱动元的嵌入式脚本语言</p>
+<hr/>
+<h2>第一部分javascript概述</h2>
+<p>javascript的发展历史</p>
+<input type="button" value="删除水平线" onclick="delhr()"/>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获取鼠标坐标和单击改变背景颜色</title>
+    <script>
+        var color1;
+        //随机数控制颜色
+        function color() {
+            let color=["red","blue","green","yellow","black","#007c80","#0f801a","#83848a","#0bcaff","#a256ff",];
+            let shuzi=(parseInt(Math.random()*10-1));
+            color1=color[shuzi];
+            return color1;
+        }
+        function zuobiao() {
+            window.onclick=function (){
+                //获取x轴y轴坐标
+                let x=event.x;
+                let y=event.y;
+                alert("鼠标的x轴坐标为"+x+"鼠标的y轴为"+y);
+                //改变颜色
+                let bodyid = document.getElementById("body");
+                bodyid.style.backgroundColor=color();
+
+            }
+
+        }
+    </script>
+</head>
+<body onload="zuobiao()" id="body">
+</body>
+</html>

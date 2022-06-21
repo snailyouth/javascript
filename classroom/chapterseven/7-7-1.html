@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function processKeyDown() {
+        var ch=String.fromCharCode(event.keyCode);
+        if (ch.toUpperCase()=="A"&&event.ctrlKey);{
+            event.returnValue=false;
+            alert("禁止全选");
+
+        }
+    }
+    document.onkeydown=processKeyDown;
+
+</script>
+<p>本页已禁用组合键</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<p id="clock">显示电子时钟的位置</p>
+<script>
+    function ShowTime(){
+        var now,clock_line,time_text;
+        now=new Date();
+        time_text=now.getHours()+":"+now.getMinutes()+":"+now.getSeconds();
+        clock_line=document.getElementById("clock");
+        clock_line.innerText=time_text;
+        setTimeout("ShowTime()",200);
+
+    }
+    ShowTime();
+</script>
+</body>
+</html>

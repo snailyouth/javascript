@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function myfocus() {
+            document.getElementById("fname").focus();
+        }
+        function myblue() {
+            document.getElementById("fname").blur();
+
+        }
+    </script>
+</head>
+<body>
+<form id="myForm">
+    姓名:<input id="fname" type="text" value="张三"/>
+    <input type="button" value="获取焦点" onclick="myfocus()"/>
+    <input type="button" value="失去焦点" onclick="myblue()"/>
+</form>
+</body>
+</html>

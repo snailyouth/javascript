@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input type="text" id="a" value="请随意选择字符串"/>
+<input type="text" id=""/>
+<script>
+    var input1=document.getElementsByTagName("input")[0];
+    var input2=document.getElementsByTagName("input")[1];
+    input1.onselect=function () {
+        //文本范围1的位置
+        start=input1.selectionStart; 
+        //文本范围2的位置
+        end=input1.selectionEnd;
+        //输入框2的内容等于输入框1的内容
+        input2.value=input1.value.substring(start,end);
+
+    }
+</script>
+</body>
+</html>

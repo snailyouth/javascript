@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    <script>
+        function a(a1) {
+            var year=a1;
+            var s = ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) ? "是闰年" : "不是闰年";
+            return s;
+            // document.write(year + s);
+        }
+    </script>
+
+
+    <script>
+        var year=parseFloat(prompt("请输入年份："));
+        backDay(year);
+        function backDay(year){
+            if(a(year)==="是闰年"){
+                alert("二月有29天");
+            }else{
+                alert("二月有28天");
+            }
+        }
+    </script>-->
+
+<!--    <script>
+        function sum(n){
+            //第一步，求累加和
+            var sum=0;
+            for (let i = 0; i <=n ; i++) {
+                sum+=i;
+                return sum;
+
+            }
+        }
+
+        function sum_all(n){
+            //第二步，调用第一个函数求和
+            var sum=0;
+            for (let i = 0; i <=n ; i++) {
+                sum+=sum(i);
+            }
+            return sum;
+        }
+    </script>-->
+
+
+
+<!--    <script>
+       //比较两个数的大小
+        function TwoNumber(a,b) {
+            var num=a>b?a:b;
+            return num;
+        }
+        //比较三个数的大小
+        function ThreeNumber(a,b,c) {
+            var num1=TwoNumber(a,b)>c?TwoNumber(a,b):c;
+            alert(num1);
+        }
+        ThreeNumber(9,4654,6);
+    </script>-->
+
+
+<!--    <script>
+        document.writeln(parseInt("66.6s"));
+        document.writeln(parseFloat("66ss36.8id"));
+        document.writeln("80"*"90");
+        document.writeln("八十"*"九十");
+
+    </script>-->
+
+
+    <script>
+        var a=[];
+        for (let i = 2; i <100; i++) {
+            var q=0;
+            for (let j = 2; j <i ; j++) {
+                if(i%j!=0){
+                   a.push(i);
+                   break;
+                }
+            }
+        }
+
+        for (let i = 0; i <a.length ; i++) {
+            if (i%5==0){
+                document.writeln("<br>");
+            }
+            document.writeln(a[i]);
+        }
+
+        function iss(s){
+            var flag=true;
+            for (var i = 2; i <s ; i++) {
+
+            }
+        }
+        for (let i = 2; i <=100 ; i++) {
+            if(iss(i)){
+                document.writeln(i+"");
+                j++;
+                if(j%5==0){
+                    document.writeln("</br>");
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+
+</body>
+</html>

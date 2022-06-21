@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--<script type="text/javascript">
+    function test(){
+        for(var i=0;i<=10;i++){
+            for(var j=10-i;j>=0;j&#45;&#45;){
+                for(var k=10-i-j;k>=0;k&#45;&#45;){
+                    if((i*1+j*2+k*5==18)&&(i+j+k==10)){
+                        document.writeln("一元的："+i+"张，"+"二元的："+j+"张，"+"五元的"+k+"张<br />");
+                    }
+                }
+            }
+        }
+    }
+    test();
+</script>-->
+
+    <!--<script>
+        Sum(1,2);
+        var sum=function(num1,unm2);
+    </script>-->
+
+
+    <!--4.3-->
+<!--    <script>
+        function PrintStr(){
+            document.write("正确使用语法是学习好函数的基础！");
+        }
+
+        var sum=function (num1,num2) {
+            document.write("正确使用语法是学习好函数的基础！")
+        }
+
+    </script>-->
+
+    <!--4.4-->
+<!--    <script>
+        function Total(){
+            var price=2.3;
+            var num=4;
+            var total=price*num;
+            document.write("商品的总价为："+total);
+        }
+    </script>-->
+
+
+<!--    <script>
+        function sum(x){
+            return x+1;
+        }
+        console.log(sum(1));
+        console.log(sum("1"));
+        console.log(sum());
+        console.log(sum(1,2));
+    </script>-->
+<!--
+
+    <script>
+        function Max(x,y){
+            var max;
+            if(x>y){
+                max=x;
+            }else{
+                max=y;
+            }
+            return max;
+        }
+    </script>
+
+    <script>
+        var x,y,m;
+        x=prompt("请输入第一个数：","0");
+        y=prompt("请输入第二个数：","0");
+        m=Max(x,y);
+        alert("这两个数中最大的数为"+m);
+    </script>
+-->
+
+    <script>
+        var scope="global";
+        function fun(){
+            console.log(scope);
+            var scope="local";
+            console.log(scope);
+        }
+        fun();
+    </script>
+
+<!--    <script>
+        var a=100;
+        function send(){
+            var a=10;
+            document.writeln("局部变量的值是："+a);
+        }
+        send(a);
+        document.writeln("全局变量的值是："+a);
+    </script>
+
+    <script>
+        
+    </script>-->
+
+</head>
+<body>
+
+<div>
+<a href="javascript:PrintStr()">printstr</a>
+<a href="javascript: Total()">total</a>
+</div>
+</body>
+</html>

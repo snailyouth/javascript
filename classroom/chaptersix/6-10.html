@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <span>人邮教育</span>的地址是
+    <a id="rj" href="http://www.ryjiaoyu.com">http://www.ryjiaoyu.com</a>
+</p>
+<p>
+    <span>人邮教育</span>的地址是
+    <a id="ptpress" href="http://www.ryjiaoyu.com">http://www.ryjiaoyu.com</a>
+</p>
+
+<script>
+    document.writeln("本页面有以下超链接地址：");
+    var arr=document.getElementsByTagName("a");
+    for (let i = 0; i <arr.length ; i++) {
+       document.writeln(arr[i].href);
+    }
+    document.writeln("其中");
+    document.writeln("  人邮教育的网址是");
+    document.writeln(document.links[0].href);
+    document.writeln("  人邮教育的网址是");
+    document.writeln(document.links[1].href);
+</script>
+</body>
+</html>

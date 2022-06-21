@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        *{
+
+            margin: 0;
+
+            padding: 0;
+
+            text-decoration: none;
+
+            list-style: none;
+
+        }
+
+
+
+        .container{
+
+            width: 508px;
+
+            border: 1px solid #eee;
+
+            margin: 20px auto;
+
+            height: 98px;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+
+
+        .tab{
+
+            height: 27px;
+
+        }
+
+
+
+        .tab-wrap{
+
+            height: 27px;
+
+            width: 551px;
+
+            position:absolute;
+
+            left: -1px;
+
+            background: #ccc;
+
+            overflow: hidden;
+
+        }
+
+
+
+        .tab-wrap li{
+
+            float: left;
+
+            text-align: center;
+
+        }
+
+
+
+        .tab-wrap li a{
+
+            display: block;
+
+            width: 100px;
+
+            height: 26px;
+
+            line-height: 26px;
+
+            border-bottom: 1px solid #eee;
+
+            padding: 0 1px;
+
+            color: #000;
+
+        }
+
+        .tab-wrap .selected{
+
+            background: #fff;
+
+            color: orange;
+
+            font-weight: bold;
+
+            border-bottom: 1px solid #fff;
+
+            border-right: 1px solid #eee;
+
+            border-left: 1px solid #eee;
+
+            padding: 0;
+
+        }
+
+        .content{
+
+            width: 100%;
+
+            height: 71px;
+
+            overflow: hidden;
+
+        }
+
+        .content .mod{
+
+            display: none;
+
+        }
+
+        .content div:first-child{
+
+            display: block;
+
+        }
+
+        .mod ul{
+
+            overflow: hidden;
+
+        }
+
+        .mod li{
+
+            float: left;
+
+            font-size: 14px;
+
+            margin: 10px;
+
+        }
+
+    </style>
+
+    <script src="jquery.js"></script>
+</head>
+<body onload="">
+<div class="container" id="container">
+    <div class="tab" id="tab">
+        <ul class ="tab-wrap">
+            <li><a href="#" class="selected">选项卡一</a> </li>
+            <li><a href="#" >选项卡二</a> </li>
+            <li><a href="#" >选项卡三</a> </li>
+            <li><a href="#" >选项卡四</a> </li>
+            <li><a href="#" >选项卡五</a> </li>
+
+        </ul>
+    </div>
+    <div class="content" id="content">
+        <div class="mod">
+            选项卡一内容
+        </div>
+        <div class="mod">
+            选项卡二内容
+        </div>
+        <div class="mod">
+            选项卡三内容
+        </div>
+        <div class="mod">
+            选项卡四内容
+        </div>
+        <div class="mod">
+            选项卡五内容
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function getObj(id) {
+        return document.getElementById(id);
+    }
+    //获取标签名
+    var tabs=getObj("tab").getElementsByTagName("a");
+    //获取标签名
+    var contents=getObj("content").getElementsByTagName("div");
+    //根据tab标签的序号来切换内容
+    function switchTab(index) {
+        for (let i = 0; i <tabs.length ; i++) {
+            if (index==i){//选中的样式
+                tabs[index].className="selected";
+                //设置标签为块元素
+                contents[index].style.display="block";
+            }else{//未选中的样式
+                tabs[i].className="";
+                contents[i].style.display="none";
+            }
+        }
+    }
+
+    //添加鼠标移动事件
+    for (let i = 0; i <tabs.length ; i++) {
+        tabs[i].index=i;
+        //监听事件
+        tabs[i].addEventListener("mouseover",function () {
+            switchTab(this.index);
+        },false);
+
+    }
+
+    //定时器
+    var mark=0;//轮播记号
+    var timer;//定时器
+    function autoPaly() {
+        mark++;
+        if (mark==tabs.length) {
+            mark = 0;
+        }
+        switchTab(mark);
+    }
+    //设置定时器
+    timer=setInterval(autoPaly,2000);
+
+    //设置鼠标悬浮暂停
+    container.addEventListener("mouseover",function () {
+        clearInterval(timer);
+    },false);
+    container.addEventListener("mouseout",function () {
+        timer=setInterval(autoPaly,2000);
+    },false);
+
+
+</script>
+</body>
+</html>

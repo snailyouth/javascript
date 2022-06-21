@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--p125-3-->
+<script>
+    //获取当前时间
+    let date = new Date();
+    //xingqi=表示星期几
+    let xingqi="";
+    //判断现在是星期几
+    switch(date.getDay()){
+        case 1:xingqi="星期一";break;
+        case 2:xingqi="星期二";break;
+        case 3:xingqi="星期三";break;
+        case 4:xingqi="星期四";break;
+        case 5:xingqi="星期五";break;
+        case 6:xingqi="星期六";break;
+        case 0:xingqi="星期日";break;
+    }
+    document.writeln("现在是"+date.getFullYear()+"年"+(date.getMonth()+1)+"月"+date.getDate()+"日"
+        +date.getHours()+"点"+date.getMinutes()+"分"+date.getSeconds()+"秒"+"("+xingqi+")"+"欢迎你的到来");
+</script>
+
+
+<!--p73-4编写一个函数能够输出同时被3，5，7整除的-->
+<script>
+    // 循环得到1 - 1000之间的所有数
+    for (var i = 1; i <= 1000; i++) {
+        // 调用函数
+        var result = lv(i);
+        // 判断输出结果
+        if (result) {
+            document.write("1-1000第" + i + "个数能够同时被3,5,7整除：" + result + "</br>");
+        }
+    }
+
+    // 计算是否能够同时被3,5,7整除
+    function lv(sum) {
+        // 判断条件
+        if (sum % 3 == 0 && sum % 5 == 0 && sum % 7 == 0) {
+            return sum;
+        }
+    }
+</script>
+
+
+<script>
+    Date.prototype.isLeapYear=function(){
+        var y =this.getFullYear();
+        return(y%4==0&&y%100!=0)||(y%400==0);
+    }
+    function getMonthLeftDay(){
+
+    }
+
+</script>
+<script>
+    var obj={'0':'a','1':'b','2':'c'};
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function replaceNode(){
+        var parNode=document.getElementById("div1");
+        var firstP=document.getElementById("p1")
+        var newDive=document.createElement("div");
+        var newText=document.createTextNode("javascript");
+        newDive.appendChild(newText);
+        parNode.replaceChild(newDive,firstP);
+
+    }
+</script>
+<div id="div1">
+    <p id="p1">本学期开的第1门专业课程是java</p>
+    <p id="p2">本学期开的第2门专业课程是javascript</p>
+    <p id="p3" >本学期开的第3门专业课程是jquery</p>
+    <p id="p4">本学期开的第4门专业课程是javaweb</p>
+</div>
+<form action="" method="get">
+    <input type="button" value="将第一行内容替换位javascript实训课" onclick="replaceNode()"/>
+
+</form>
+</body>
+</html>

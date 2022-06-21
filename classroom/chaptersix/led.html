@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin:0;padding: 0;
+        }
+        .wrapper{
+            color: #333333;
+            padding-top: 0.75rem;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 300px;
+        }
+        .inner{
+            width: 1000px;
+            overflow: hidden;
+            background-image: url("http://www.webdm.cn/images/20130228/LEDbj.gif");
+            padding-top: 8px;
+            padding-right: 5px;
+            padding-left: 5px;
+            height: 50px;
+        }
+        .inner input{
+            display: inline-block;
+            color: #FF0000;
+            font-size: 35px;
+            background-color: transparent;
+            border: none;
+        }
+    </style>
+
+    <script>
+        var txt=prompt("请输入您想输入的内容：");
+        function scrollmsg(index) {
+            var msg = txt;
+            var out = "";
+            var c = 0;
+            if (index > 0) {
+                for (c = 0; c < index; c++) {
+                    out += " ";
+                }
+                out += msg;
+                index--;
+                var cmd = "scrollmsg(" + index + ")";
+                document.querySelector(".txt").value = out;
+                window.setTimeout(cmd, 150);
+            } else if (index <= 0) {
+                if (-index < msg.length) {
+                    out += msg.substring(-index, msg.length);
+                    index--;
+                    var cmd = "scrollmsg(" + index + ")";
+                    document.querySelector(".txt").value = out;
+                    window.setTimeout(cmd, 150);
+                }
+                else {
+                    document.querySelector(".txt").value = " ";
+                    window.setTimeout("scrollmsg(20)", 150);
+
+                }
+            }
+        }
+    </script>
+
+</head>
+<body onload="window.setTimeout('scrollmsg(20)')">
+<div id="wrapper" class="wrapper">
+    <div class="inner">
+            <input type="text" class="txt">欢迎学习javascript</input>
+    </div>
+</div>
+</body>
+</html>

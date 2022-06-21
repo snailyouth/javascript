@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+
+    </style>
+
+    <script>
+        //重置表单内容
+        function clear1() {
+                let  clear= document.getElementById("name");
+                clear.value="";
+        }
+        function clear2() {
+                let  clear= document.getElementById("password1");
+                clear.value="";
+        }
+        function clear3() {
+                let  clear= document.getElementById("password2");
+                clear.value="";
+        }
+        function clear4() {
+                let  clear= document.getElementById("shojihao");
+                clear.value="";
+        }
+        function clear5() {
+                let  clear= document.getElementById("yzm1");
+                clear.value="";
+        }
+
+        //姓名失去焦点提交事件
+        function name1(){
+            //不能为空
+            let text = document.getElementById("name");
+                if (text.value=="") {
+                    alert("不能为空");
+                }
+
+            //获取输入框的值
+            let txt=text.value;
+            //将字符串转换为字符数组
+            let split = txt.split("");
+            //接收ascill值
+            var shuzu1=new Array();
+            //符号的ascill值
+            var shuzu2=[33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,58,59,60,61,62,63,64,91,92,93,94,95,96,123,124,125,126];
+            for (let i = 0; i <split.length ; i++) {
+                    shuzu1[i]=split[i].charCodeAt();
+            }
+            //将输入的字符和符号的ascill值比较
+            for (let i = 0; i <shuzu1.length ; i++) {
+                for (let j = 0; j <shuzu2.length ; j++) {
+                    if (shuzu1[i]==shuzu2[j]) {
+                        alert("用户名仅支持汉字、字母、数字");
+                    }
+                }
+
+            }
+        }
+
+        //密码1失去焦点事件
+        function psd1() {
+            let password1 = document.getElementById("password1");
+            let zhangdu=password1.value.length;
+            if (zhangdu<6||zhangdu>20){
+                alert("长度小于6或大于20");
+            }
+        }
+        //密码2失去焦点事件
+        function psd2() {
+            let password2 = document.getElementById("password2");
+            if ((password1.value)!=(password2.value)){
+                alert("密码不一致");
+            }
+        }
+        //手机号失去焦点
+        function phone() {
+            let shojihao = document.getElementById("shojihao");
+            //值
+            let value = shojihao.value;
+            //长度
+            let zhangdu=shojihao.value.length;
+            if (zhangdu<11||zhangdu>11){
+                alert("号码错误，请输入正确的号码");
+            }
+            let split = value.split("");
+            for (let i = 0; i < split.length; i++) {
+                if (isNaN(split[i])){
+                    alert("请输入数字");
+                    break;
+                }
+        }
+        }
+
+        //验证码
+        var result;
+        function rad() {
+            result='';
+            for (let i = 0; i <4; i++) {
+                result=result+(parseInt(Math.random()*10)).toString();
+            }
+            alert("验证码为"+result);
+        }
+        function yzmdueicuo() {
+            let yzm1 = document.getElementById("yzm1");
+            let y=yzm1.value.toString();
+            if (y==""){
+                alert("请输入验证码");
+            }else if(y!=result){
+                alert("验证码输入错误！");
+            }
+
+        }
+     //确认按钮
+        var checked1;
+        function quanren(e) {
+          checked1 = e.checked;
+        }
+
+        //登录成功
+        function good() {
+            if (checked1==true) {
+                alert("恭喜你登录成功！")
+            }else{
+                alert("请勾选");
+            }
+        }
+    </script>
+</head>
+<body>
+<form id="form1" name="form2" method="post" action="#" >
+    用户名:<input type="text" id="name" value="请输入你的用户名和登录名"  onclick="clear1()" onblur="name1()"/><br/><br/>
+    设置密码:<input type="text" id="password1" value="建议至少使用两种字符组合" onclick="clear2()" onblur="psd1()"/><br/><br/>
+    确认密码:<input type="text" id="password2" value="请再次输入密码" onclick="clear3()" onblur="psd2()"/><br/><br/>
+    手机号：<input type="text" id="shojihao" value="请输入你的手机号" onclick="clear4()" onblur="phone()"/><br/><br/>
+    验证码：<input type="text" id="yzm1" value="请输入验证码" onclick="clear5()" onblur="yzmdueicuo()"/>
+    <input type="button" id="yzm3" value="验证码" onclick="rad()"/><br/><br/>
+    <input type="checkbox" id="cbox"  onclick="quanren(this)"/>阅读并同意《京东用户注册协议》《隐私政策》<br/><br/>
+    <input type="submit" id="submit" value="立即登录" onclick="good()"/><br/><br/>
+</form>
+
+<!--<script>
+    //确认按钮
+    let cbox= document.getElementById("cbox");
+    function quanren() {
+        let newVar = $('#cbox').is(":checked");
+
+        alert(newVar);
+    }
+</script>-->
+</body>
+</html>

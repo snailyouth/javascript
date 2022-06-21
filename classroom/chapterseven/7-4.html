@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onclick="return preventLink()">
+<script>
+    function preventLink() {
+        if (event.srcElement.tagName.toUpperCase()=="A"&&event.shiftKey)
+        {
+            event.returnValue=false;
+
+        }
+
+    }
+</script>
+<p>
+    <a href="http://www.ryjiaoyu.com/">人邮社区主页</a>
+</p>
+</body>
+</html>

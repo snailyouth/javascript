@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function moveNode(){
+        var parNode=document.getElementById("div1");
+        var firstNode=parNode.firstChild;
+        parNode.appendChild(firstNode);
+    }
+</script>
+
+<div id="div1">
+    <p>本学期开的第一门专业课程是java</p>
+    <p>本学期开的第一门专业课程是javascript</p>
+    <p>本学期开的第一门专业课程是jquery</p>
+    <p>本学期开的第一门专业课程是javaweb</p>
+</div>
+<form action="" method="get">
+    <input type="button" value="将第一门课程java移动末尾" onclick="moveNode()"/>
+
+</form>
+</body>
+</html>

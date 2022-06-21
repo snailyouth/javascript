@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function catchWord() {
+            var word=document.body.createTextRange();
+            word.moveToPoint(event.clienX,event.clienY);
+            word.expand("word");
+            window.status=word.text;
+
+        }
+    </script>
+</head>
+<body onmousermove="catchWord()">
+<p>
+    通过调用TextRange对象的miveStart，moveEnd，move，moveToRoint和expand等方法可以改变这两个指针的位置，从而改变文本范围的位置和大小
+</p>
+
+</body>
+</html>

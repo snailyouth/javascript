@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#fef4d2" onload="window.setTimeout('scrollmsg(20)')">
+<br><br>
+<center/>
+<h2>欢迎登录</h2>
+<hr>
+<br><br>
+
+<script>
+    var yourname=prompt("请输入您的名字：","朋友");
+    function scrollmsg(index) {
+        var m1 = ("欢迎你，" + yourname + ",希望再次能够有所收获!");
+        var m2 = "请多提宝贵意见!";
+        var msg = m1 + m2;
+        var out = "";
+        var c = 0;
+        if (index > 0) {
+            for (c = 0; c < index; c++) {
+                out += " ";
+            }
+            out += msg;
+            index--;
+            var cmd = "scrollmsg(" + index + ")";
+            document.display.box.value = out;
+            window.setTimeout(cmd, 150);
+        } else if (index <= 0) {
+            if (-index < msg.length) {
+                out += msg.substring(-index, msg.length);
+                index--;
+                var cmd = "scrollmsg(" + index + ")";
+                document.display.box.value = out;
+                window.setTimeout(cmd, 150);
+            }
+        else {
+            document.display.box.value = " ";
+            window.setTimeout("scrollmsg(20)", 150);
+
+        }
+    }
+    }
+</script>
+<form name="display">
+    <input type="text" name="box" size="30">
+<!--    <input/>-->
+</form>
+</body>
+</html>

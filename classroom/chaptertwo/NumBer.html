@@ -1,0 +1,153 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+&lt;!&ndash;    &lt;!&ndash;整数&ndash;&gt;
+    <script type="text/javascript">
+        var intnum=50;
+        var intnum1=0o70;
+        // var intnum2=0o48;
+        var intnum3=0xA;
+        alert(intnum3);
+    </script>
+    &lt;!&ndash;浮点数&ndash;&gt;
+    <script>
+        var floatNum=1.1;
+        var floatNum1=.1;
+        var floatNum2=1.;
+        var floatNum3=2.00;
+        console.log(floatNum);
+        console.log(floatNum1);
+        console.log(floatNum2);
+        console.log(floatNum3);
+    </script>
+    <script>
+        var a=0.2;
+        var b=0.1;
+        alert(a+b);//精度会丢失
+    </script>
+    &lt;!&ndash;boolean类型&ndash;&gt;
+    <script>
+        var a=true;
+        var b=false;
+        alert(b);
+    </script>
+    &lt;!&ndash;underfined(未定义值)&ndash;&gt;
+    <script>
+      var variable;
+      alert(variable);
+      console.log(variable);//声明但未初始化，输出undefined
+      console.log(variable1);//未定义报错
+    </script>&ndash;&gt;
+    &lt;!&ndash;数组&ndash;&gt;
+&lt;!&ndash;    <script>
+        var int=[1,3,34,"小蔡"];
+        console.log(int[3]);
+        &lt;!&ndash;Na&ndash;&gt;
+    </script>
+    &lt;!&ndash;转义字符&ndash;&gt;
+    <script>
+        var a={
+            aa:23,
+            bb:"小蔡",
+            cc:[2,34,"fdf"]
+        }
+        var ee="sdfdsfd" +
+            "fdsfsdf" +
+            "fdsfsfsdf" +
+            "sdfdf";
+        console.log(ee);
+        console.log('\"');
+    </script>&ndash;&gt;
+
+    &lt;!&ndash;变量作用域&ndash;&gt;
+&lt;!&ndash;    <script>
+        var a="global";
+        b="global";
+        function testaFunction(){
+            var a="local";
+            return a;
+        }
+        function testbFunction(){
+            b="local";
+            return b;
+        }
+        console.log(a);
+        console.log(testaFunction());
+        console.log(b);
+        console.log(testbFunction());
+        console.log(b);
+        console.log(a);
+    </script>&ndash;&gt;
+
+    &lt;!&ndash;同步案例：通过常量pi求圆的周长&ndash;&gt;
+    <script>
+        var r=2.5;
+        const p=Math.PI;
+        var c=p*2*r;
+        document.write("半径为2.5的圆的周长为："+c);
+    </script>
+</head>
+<body>
+
+</body>
+</html>-->
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>书籍列表</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h1>
+                    <small>书籍列表--显示所有书籍</small>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 column">
+            <a class="btn btn-primary" href="${pageContext.request.contextPath}/book/allBook">新增</a>
+        </div>
+    </div>
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th>书籍编号</th>
+                    <th>书籍名字</th>
+                    <th>书籍数量</th>
+                    <th>书籍详情</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <c:forEach var="book" items="${requestScope.get('list')}">
+                    <tr>
+                        <td>${book.getBookID()}</td>
+                        <td>${book.getBookName()}</td>
+                        <td>${book.getBookCounts()}</td>
+                        <td>${book.getDetail()}</td>
+
+                    </tr>
+                </c:forEach>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

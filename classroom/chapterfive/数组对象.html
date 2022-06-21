@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = new Array();
+    let array1 = new Array(5);
+    let array2 = new Array("小蔡","小谢");
+    for (let i = 0; i <array2.length ; i++) {
+        document.write(array2[i]);
+    }
+    //带有初始化数据的构造函数，创建数组并初始化参数数据
+    let array3 = new Array(4,'hello',new Date());
+
+    //使用方括号创建空数组等同于调用无参构造函数
+    var array4=[];
+    //使用中括号，并传入初始化数据，等同于调用带有初始化数据的构造函数
+    var array5=[5];
+    //注意事项
+    //1.如果传入一个数字参数则创建一个长度位参数的数组，如果传入多个，则创建一个数组，参数作为初始化数据加到数组中
+    //2.但是通过字面量方式无论注入几个参数，都会把参数当作初始化内容
+    var a3=[5];
+    console.log(a3.length);
+
+    var students,i;
+    students=new Array("张三","李四","王五");
+    for (let j = 0; j <students.length ; j++) {
+        document.write("第"+(j+1)+"个同学是："+students[j]);
+    }
+
+
+</script>
+</body>
+</html>
